@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     display: 'block',
     color:'#fff',
-    fontSize: "smaller",
+    fontSize: "large",
     [theme.breakpoints.up('sm')]: {
       display: 'block',
       color:'#fff',
@@ -34,9 +34,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   buynow: {    
-   maxHeight: "40px",
-   lineHeight: "normal",
-   fontSize: "smaller"
+    [theme.breakpoints.up('sm')]: {
+      fontSize: "revert",   
+      fontWeight: "bold",   
+      maxHeight: "50px"
+    },
+    fontSize: "smaller",
+    fontWeight: "bold",
+    maxHeight: "40px"
   },
   search: {
     position: 'relative',

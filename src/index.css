@@ -57,7 +57,7 @@ code {
 .card-allign{
   align-self: center;
   justify-self: center;
-  padding-left: 10%;
+  padding: 5%;
   display: flex;
   display: inline-flex;
   flex-wrap: wrap;
