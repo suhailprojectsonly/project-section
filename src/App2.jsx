@@ -3,21 +3,17 @@ import PrimarySearchAppBar from "./components/Navigation";
 import OutlinedCard from "./components/OutlinedCard";
 import "./index.css";
 
-import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
-import ProjectName from './components/ProjectName';
-import ProjectDetails from './components/ProjectDetails';
-
-function App() {
+function App2() {
   return (
     <div>
       
       <PrimarySearchAppBar />
       <CustomSeparator />
-     <OutlinedCard/>
+     <OutlinedCard/>  
 
       
     </div>
   );
 }
 
-export default App;
+export default App2;
