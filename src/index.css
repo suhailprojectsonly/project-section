@@ -57,11 +57,12 @@ code {
 .card-allign{
   align-self: center;
   justify-self: center;
-  padding: 5%;
+  padding-left: 10%;
+  padding-right: 5%;
   display: flex;
   display: inline-flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 40px;
   flex-shrink: 0;
 
 }
