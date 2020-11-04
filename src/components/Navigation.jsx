@@ -183,12 +183,7 @@ export default function PrimarySearchAppBar() {
           <div className={classes.sectionDesktop}>
           <Button variant="contained" color="primary" href="#contained-buttons">
             Buy Now
-            </Button>
-            <IconButton aria-label="show 17 new notifications" color="inherit">
-              <Badge badgeContent={17} color="secondary">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton>
+            </Button>            
             <IconButton aria-label="show 17 new notifications" color="inherit">
               <Badge badgeContent={17} color="secondary">
                 <NotificationsIcon />

@@ -49,7 +49,7 @@ export default class OutlinedCard extends React.Component {
                   </div>
           <CardContent>
             <Typography variant="h5" component="h2" class="cardheader">
-              ProjectName
+              Project Name
               <CardActions>
                 
               </CardActions>
