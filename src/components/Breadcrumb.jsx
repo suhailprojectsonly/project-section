@@ -33,7 +33,7 @@ export default function CustomSeparator() {
         <Link color="inherit" href="/getting-started/installation/" onClick={handleClick}>
           Configure Project
         </Link>
-        <Typography color="textPrimary">Publish</Typography>
+        <Typography color="textPrimary">Save</Typography>
       </Breadcrumbs>  
     </div>
     </div>

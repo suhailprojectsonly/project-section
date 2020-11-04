@@ -7,6 +7,12 @@ class ProjectDetails extends React.Component {
     render() { 
         return ( 
 <div class="project-div">
+    
+ <Link to="/" onClick={this.handleClick}>
+<Button variant="outlined">Home
+</Button>
+</Link>
+
 <Form >
     <div class="pl-3 pr-3 pt-2">
     <Form.Group > 
@@ -14,18 +20,23 @@ class ProjectDetails extends React.Component {
   <textarea class="form-control" rows="5" id="comment"></textarea>
   </Form.Group>
     </div>
- 
-  <div className="pl-4 pb-2">
-  <Button variant="primary" type="submit" >
+    <div className="pl-4 pb-2">
+    <Link to="/" >
+  <Button variant="primary" type="submit" onClick={this.handleClick} >
     Submit
   </Button>
+  </Link>
   </div>
- 
 </Form>
 </div>
 
          );
     }
+
+    handleClick(event) {
+        document.getElementById("OutlineCard").style.display="block";
+     } 
+    
 }
  
 export default ProjectDetails;

@@ -41,12 +41,17 @@ export default class OutlinedCard extends React.Component {
 
       <div className="card-allign">
         <Card className={(this.classes.root, "cardview")} variant="outlined">
+        <div className="form-group pull-right">            
+        <Link to="/ProjectName" style={{float:"right", textDecoration:"none"}} onClick={this.handleClick}>
+                <span variant="outlined" style={{margin:"20px", fontSize:"30px"}}>+
+                </span>
+                  </Link> 
+                  </div>
           <CardContent>
             <Typography variant="h5" component="h2" class="cardheader">
               ProjectName
               <CardActions>
-                <Link to="/ProjectName" onClick={this.handleClick}>+</Link>            
-                {/* <button onClick={this.onSubmit()}>Login</button>   */}
+                
               </CardActions>
             </Typography>
 
@@ -60,12 +65,18 @@ export default class OutlinedCard extends React.Component {
         </Card>
 
         <Card className={(this.classes.root, "cardview")} variant="outlined">
+        <div className="form-group pull-right">            
+        <Link to="/ProjectDetails" style={{float:"right", textDecoration:"none"}} onClick={this.handleClick}>
+                <span variant="outlined" style={{margin:"20px", fontSize:"30px"}}>+
+                </span>
+                  </Link> 
+                  </div>
           <CardContent>
             <Typography variant="h5" component="h2" class="cardheader">
               Projects Details
               <CardActions>
                 {" "}
-                <Link to="/ProjectDetails" onClick={this.handleClick}>+</Link>            
+                
               </CardActions> 
             </Typography>
 
@@ -77,11 +88,17 @@ export default class OutlinedCard extends React.Component {
         </Card>
 
         <Card className={(this.classes.root, "cardview")} variant="outlined">
+          <div className="form-group pull-right">            
+        <Link to="/ProjectPublish" style={{float:"right", textDecoration:"none"}} onClick={this.handleClick}>
+                <span variant="outlined" style={{margin:"20px", fontSize:"30px"}}>+
+                </span>
+                  </Link> 
+                  </div>
           <CardContent>
             <Typography variant="h5" component="h2" class="cardheader">
               Publish
               <CardActions>
-                <Link to="/ProjectPublish" onClick={this.handleClick}>+</Link>            
+                          
               </CardActions>              
             </Typography>
 
@@ -97,8 +114,10 @@ export default class OutlinedCard extends React.Component {
 </div>
 }
  handleClick(event) {
-  //  document.getElementById("OutlineCard").style.display="none";
-  } 
+    document.getElementById("OutlineCard").style.display="none";
+
+    
+ } 
  
   
 }

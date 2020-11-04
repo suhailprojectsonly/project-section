@@ -12,6 +12,11 @@ class ProjectPublish extends React.Component {
             <div class="project-div">
 
 <Form >
+
+<Link to="/" onClick={this.handleClick}>
+<Button variant="outlined">Home
+</Button>
+</Link>
   
   <div className="projectnamebox">
     <label for="exampleFormControlFile1">Upload Project</label>
@@ -22,10 +27,12 @@ class ProjectPublish extends React.Component {
     <Form.Control type="text" placeholder="Additional Information(Optional)" />
   </Form.Group>
 
-  <div className="pl-4 pb-3 pt-2">
-  <Button variant="primary" type="submit" >
+  <div className="pl-4 pb-2">
+      <Link to="/" >
+  <Button variant="primary" type="submit" onClick={this.handleClick} >
     Upload
   </Button>
+  </Link>
   </div>
  
 </Form> 
@@ -33,6 +40,10 @@ class ProjectPublish extends React.Component {
     
         );
     }
+    
+    handleClick(event) {
+        document.getElementById("OutlineCard").style.display="block";
+     } 
 }
  
 export default ProjectPublish;

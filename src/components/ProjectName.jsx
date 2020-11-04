@@ -12,6 +12,10 @@ class ProjectName extends React.Component {
             
 
 <div class="project-div">
+<Link to="/" onClick={this.handleClick}>
+<Button variant="outlined">Home
+</Button>
+</Link>
 
 <Form >
   <Form.Group className="projectnamebox">
@@ -27,15 +31,22 @@ class ProjectName extends React.Component {
     </Form.Text>
   </Form.Group>
   <div className="pl-4 pb-2">
-  <Button variant="primary" type="submit" >
+  <Link to="/" >
+  <Button variant="primary" type="submit" onClick={this.handleClick} >
     Submit
   </Button>
+  </Link>
   </div>
  
 </Form>
   </div>
         );
     }
+
+    handleClick(event) {
+        document.getElementById("OutlineCard").style.display="block";
+     } 
+    
 }
  
 export default ProjectName;
