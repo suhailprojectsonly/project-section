@@ -24,11 +24,19 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   title: {
-    display: 'none',
+    display: 'block',
+    color:'#fff',
+    fontSize: "smaller",
     [theme.breakpoints.up('sm')]: {
       display: 'block',
-      color:'#fff'
+      color:'#fff',
+      fontSize: "x-large",
     },
+  },
+  buynow: {    
+   maxHeight: "40px",
+   lineHeight: "normal",
+   fontSize: "smaller"
   },
   search: {
     position: 'relative',
@@ -175,15 +183,19 @@ export default function PrimarySearchAppBar() {
     <div className={classes.grow, ""}>
       <AppBar position="static">
         <Toolbar>
+        
           <Typography className={classes.title} variant="h4" noWrap>
             Project Section
           </Typography>
-          
+        
+        
           <div className={classes.grow} />
-          <div className={classes.sectionDesktop}>
-          <Button variant="contained" color="primary" href="#contained-buttons">
+          <Button variant="contained" className={classes.buynow} color="primary" href="#contained-buttons">
             Buy Now
-            </Button>            
+            </Button>
+          <div className={classes.sectionDesktop}>
+        
+                     
             <IconButton aria-label="show 17 new notifications" color="inherit">
               <Badge badgeContent={17} color="secondary">
                 <NotificationsIcon />
