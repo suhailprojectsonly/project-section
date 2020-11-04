@@ -33,6 +33,11 @@ class ProjectPublish extends React.Component {
     Upload
   </Button>
   </Link>
+
+  <Link to="/" onClick={this.handleClick} class="pl-2">
+<Button variant="primary">Home
+</Button>
+</Link>
   </div>
  
 </Form> 

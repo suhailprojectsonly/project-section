@@ -26,6 +26,11 @@ class ProjectDetails extends React.Component {
     Submit
   </Button>
   </Link>
+
+  <Link to="/" onClick={this.handleClick} class="pl-2">
+<Button variant="primary">Home
+</Button>
+</Link>
   </div>
 </Form>
 </div>

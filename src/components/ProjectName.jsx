@@ -12,10 +12,7 @@ class ProjectName extends React.Component {
             
 
 <div class="project-div">
-<Link to="/" onClick={this.handleClick}>
-<Button variant="outlined">Home
-</Button>
-</Link>
+
 
 <Form >
   <Form.Group className="projectnamebox">
@@ -36,6 +33,11 @@ class ProjectName extends React.Component {
     Submit
   </Button>
   </Link>
+
+  <Link to="/" onClick={this.handleClick} class="pl-2">
+<Button variant="primary">Home
+</Button>
+</Link>
   </div>
  
 </Form>

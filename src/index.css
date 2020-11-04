@@ -11,11 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+.MuiButton-containedPrimary {
+  color: #0f0d0d!important;
+  background-color: #f0f2ff!important;
+}
+/* 
 .MuiAppBar-colorPrimary {
   color: #fff !important;
   background-color: darkslategray !important;
-}
+} */
 
 .alligncenter{
   display: flex;
@@ -53,7 +57,7 @@ code {
 .card-allign{
   align-self: center;
   justify-self: center;
-  padding-left: 5%;
+  padding-left: 10%;
   display: flex;
   display: inline-flex;
   flex-wrap: wrap;
