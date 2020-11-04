@@ -51,8 +51,9 @@ code {
 
 
 .card-allign{
-
-  padding-left: 150px;
+  align-self: center;
+  justify-self: center;
+  padding-left: 5%;
   display: flex;
   display: inline-flex;
   flex-wrap: wrap;
@@ -103,4 +104,3 @@ code {
   width: 1000px;
   height: 200px   ;
 }
-
